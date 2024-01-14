@@ -1,0 +1,18 @@
+server:
+  port: 8091
+  servlet:
+    context-path: /
+
+logging:
+  config: classpath:log4j2.xml
+
+#retry:
+#  #是否错误重试
+#  #如果方法和类上没增加@RetryConut注解，则取该配置
+#  #优先级：
+#  #      1.取方法@RetryConut重试次数
+#  #      2.取类上@RetryConut重试次数
+#  #      3.取该配置
+#  retryable: false
+#  #重试次数
+#  count: 1
